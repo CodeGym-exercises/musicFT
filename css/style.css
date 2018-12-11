@@ -49,6 +49,7 @@ svg{
 	margin-top: 5px;
 	height: 500px;
 	/*border: 1px solid #000;*/
+	border-bottom: 30px ;
 }
 .content {
 	display: inline-block;
@@ -105,6 +106,23 @@ svg{
 }
 
 /*====================Footer==========================*/
+/*.footer{*/
+	/**/
+/*}*/
 .footer{
-	
+
+	background-position: center;
+	background-repeat: no-repeat;
+	/*background-size: cover;*/
+	background-attachment: fixed;
+	position: absolute;
+	height: 100%;
+	border-top: 350px solid ;
+	display: block;
 }
+
+.footer .panelheading{
+	/*background-color: #222;*/
+	/*color: #ffffff;*/
+}
+
