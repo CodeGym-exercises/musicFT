@@ -93,10 +93,13 @@ svg{
 	height: 100px;
 	border-bottom: 1px solid gray;
 	position: relative;
+	margin-top: 5px;
+	overflow: hidden;
 }
 
 .sidebar .tab-view img{
 	position: absolute;
 	top: 0;
 	left: 0;
+	height: 100%
 }
