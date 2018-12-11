@@ -1,0 +1,55 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.wrapper{
+	width:70%;
+	max-width: 1215px;
+	margin:0 auto;
+}
+.bg-gray{
+	background-color: gray;
+}
+.pointer{
+	cursor: pointer;
+}
+.font-brd{
+	font-size: 25px;
+}
+.font-link{
+	color: #000;
+}
+.form-search{
+	float: right;
+	line-height: 25px;
+}
+.clear{
+	clear: both;
+}
+img{
+			
+	margin:0 auto;
+}
+svg{
+	width:20px;
+}
+.navb-01{
+	height: 50px;
+	margin-bottom: 0;
+	background-color: #fff;
+}
+
+.content, .sidebar{
+	margin-top: 5px;
+	height: 500px;
+	border: 1px solid #000;
+}
+.content {
+	display: inline-block;
+	width: 65%;
+}
+.sidebar {
+	display: inline-block;
+	width:34%;
+	float: right;
+}

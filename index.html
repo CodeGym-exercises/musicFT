@@ -3,55 +3,18 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<!-- Latest compiled and minified CSS -->
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
 	<style>
-		*{
-			margin: 0;
-			padding: 0;
-		}
-		.wrapper{
-			width:90%;
-			max-width: 1215px;
-			margin:0 auto;
-		}
-		.bg-gray{
-			background-color: gray;
-		}
-		.pointer{
-			cursor: pointer;
-		}
-		.font-brd{
-			font-size: 25px;
-		}
-		.font-link{
-			color: #000;
-		}
-		.form-search{
-			float: right;
-			line-height: 25px;
-		}
-		.clear{
-			clear: both;
-		}
-		img{
-			
-			margin:0 auto;
-		}
-		svg{
-			width:20px;
-		}
-		.navb-01{
-			height: 50px;
-		    margin-bottom: 0;
-		    background-color: #fff;
-		}
+	.navb-01{
+		height: 50px;
+		margin-bottom: 0;
+		background-color: #fff;
+	}
 	</style>
 </head>
 <body>
@@ -60,18 +23,23 @@
 		<div class="navbar navb-01">
 			<div class="container-fruid">
 				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+		              <i class="fas fa-align-justify" style="font-size: 20px"></i>
+		            </button>
+
 					<a href="#" class="navbar-brand pointer font-link" >
 						<svg aria-hidden="true" data-prefix="fas" data-icon="home" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-home fa-w-18 fa-spin fa-lg"><path fill="currentColor" d="M488 312.7V456c0 13.3-10.7 24-24 24H348c-6.6 0-12-5.4-12-12V356c0-6.6-5.4-12-12-12h-72c-6.6 0-12 5.4-12 12v112c0 6.6-5.4 12-12 12H112c-13.3 0-24-10.7-24-24V312.7c0-3.6 1.6-7 4.4-9.3l188-154.8c4.4-3.6 10.8-3.6 15.3 0l188 154.8c2.7 2.3 4.3 5.7 4.3 9.3zm83.6-60.9L488 182.9V44.4c0-6.6-5.4-12-12-12h-56c-6.6 0-12 5.4-12 12V117l-89.5-73.7c-17.7-14.6-43.3-14.6-61 0L4.4 251.8c-5.1 4.2-5.8 11.8-1.6 16.9l25.5 31c4.2 5.1 11.8 5.8 16.9 1.6l235.2-193.7c4.4-3.6 10.8-3.6 15.3 0l235.2 193.7c5.1 4.2 12.7 3.5 16.9-1.6l25.5-31c4.2-5.2 3.4-12.7-1.7-16.9z" class=""></path></svg>
-						<span>Trang chủ  </span>
+						<span>Trang chủ </span>
 					</a>	
 				</div>
-				<ul class="nav navbar-nav">
-					<li><a href="#" class="font-link">Page 1</a></li>
-					<li><a href="#" class="font-link">Page 2</a></li>
-					<li><a href="#" class="font-link">Page 3</a></li>
-				</ul>
 				
-				<div class="collapse navbar-collapse">
+				
+				<div id = "navbar" class="collapse navbar-collapse" aria-expanded="false">
+					<ul class="nav navbar-nav">
+						<li><a href="#" class="font-link">Page 1</a></li>
+						<li><a href="#" class="font-link">Page 2</a></li>
+						<li><a href="#" class="font-link">Page 3</a></li>
+					</ul>
 					<div class="nav navbar-nav navbar-right">
 						<p class="navbar-text"><a href="#" class="navbar-link" data-toggle="modal" data-target="#signin-modal">Sign in</a></p> or 
 						<button type="button" class="btn btn-default navbar-btn"data-toggle="modal" data-target="#signup-modal">Sign up</button>
@@ -124,8 +92,27 @@
 		    <span class="sr-only">Next</span>
 		  </a>
 		</div>
+	
+
+		<div class="content">d</div>
+		<div class="sidebar">c</div>
+		<div class="clear"></div>
 	</div>
 	<!--end-header-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- Signin-modal -->
 <div class="modal fade" id="signin-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
@@ -182,5 +169,12 @@
     </div>
   </div>
 </div>
+
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
