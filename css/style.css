@@ -35,17 +35,16 @@ img{
 svg{
 	width:20px;
 }
-.navb-01{
-	height: 50px;
-	margin-bottom: 0;
-	background-color: #fff;
-}
 
+/*====================wrapper==========================*/
 .wrapper{
 	width:80%;
 	max-width: 1215px;
 	margin:0 auto;
 }
+
+/*====================Main-Content==========================*/
+
 .content, .sidebar{
 	margin-top: 5px;
 	height: 500px;
@@ -82,6 +81,7 @@ svg{
 	width: 100%;
 } 
 
+/*====================Sidebar==========================*/
 .sidebar {
 	display: inline-block;
 	width:34%;
@@ -102,4 +102,9 @@ svg{
 	top: 0;
 	left: 0;
 	height: 100%
+}
+
+/*====================Footer==========================*/
+.footer{
+	
 }
