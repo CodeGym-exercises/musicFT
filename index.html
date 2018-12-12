@@ -13,17 +13,21 @@
 	.navb-01{
 		height: 50px;
 		margin-bottom: 0;
-		background-color: #fff;
+		background-color: #000;
+		color: #fff;
+	}
+	.navbar-inverse{
+		margin-bottom:0px;
 	}
 	</style>
 </head>
 <body>
 	<!--Wrapper-->
-	<div class="wrapper">
+	<!-- <div class="wrapper"> -->
 
 		<!-- navbar-header -->
-		<div class="navbar navb-01">
-			<div class="container-fluid">
+		<div class="navbar navbar-inverse">
+			<div class="wrapper">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 		              <i class="fas fa-align-justify" style="font-size: 20px"></i>
@@ -43,15 +47,16 @@
 						<li><a href="#" class="font-link">Page 3</a></li>
 					</ul>
 					<div class="nav navbar-nav navbar-right">
-						<p class="navbar-text"><a href="#" class="navbar-link" data-toggle="modal" data-target="#signin-modal">Sign in</a></p> or 
-						<button type="button" class="btn btn-default navbar-btn"data-toggle="modal" data-target="#signup-modal">Sign up</button>
+						<p class="navbar-text"><a href="#" class="navbar-link" data-toggle="modal" data-target="#signin-modal"><i class="fas fa-sign-in-alt"> Sign in</i></a></p>  
+						<button type="button" class="btn btn-default navbar-btn"data-toggle="modal" data-target="#signup-modal"><i class="fas fa-user-plus"> Sign up</i></button>
+						<button type="button" class="btn btn-default navbar-btn"data-toggle="modal" data-target="#settings-modal"><i class="fas fa-cogs"></i></button>
 					</div>
 
 					<form class="navbar-form form-search" role="search">
 					  <div class="form-group">
 					    <input type="text" class="form-control" placeholder="Search">
 					  </div>
-					  <button type="submit" class="btn btn-default">Submit</button>
+					  <button type="submit" class="btn btn-default"><i class="fas fa-search"></i></button>
 					</form>	
 				</div>
 				
@@ -59,7 +64,7 @@
 		</div>
 		<!-- End Navbar-header -->
 		
-		<div class="clear"></div>
+		<!-- <div class="clear"></div> -->
 		
 		
 		<!-- Slide -->
@@ -96,79 +101,74 @@
 			    <span class="sr-only">Next</span>
 			</a>
 		</div>
-		<!-- EndSlide -->
 
-		<div class="content">
-			<h2 class="title">#List singers</h2>
-			<div class="box">
-				<img src="images/pic2.jpg" alt="">
-				<h5 class="card-title"> #singer name</h5>
+		<!-- EndSlide -->
+		
+		
+		<div class="wrapper">
+			<!-- MainContent -->
+			<div class="content">
+				<h2 class="title">#List singers</h2>
+				<div class="box">
+					<img src="images/pic2.jpg" alt="">
+					<h5 class="card-title"> #singer name</h5>
+				</div>
+				<div class="box">
+					<img src="images/pic3.jpg" alt="">
+					<h5 class="card-title"> #singer name</h5>
+				</div>
+				<div class="box">
+					<img src="images/pic1.jpg" alt="">
+					<h5 class="card-title"> #singer name</h5>
+				</div>
+				<div class="box">
+					<img src="images/pic4.jpg" alt="">
+					<h5 class="card-title"> #singer name</h5>
+				</div>	
 			</div>
-			<div class="box">
-				<img src="images/pic3.jpg" alt="">
-				<h5 class="card-title"> #singer name</h5>
+			<!-- EndMainContent -->
+		
+			<!-- Sidebar-right -->
+			<div class="sidebar">
+				<h2 class="title">#Top</h2>
+			  	<!-- Nav tabs -->
+			  	<ul class="nav nav-tabs" role="tablist">
+				    <li role="presentation" class="active">
+				    	<a href="#home" aria-controls="home" role="tab" data-toggle="tab">#VPOP</a>
+				    </li>
+				    <li role="presentation">
+				    	<a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">#KPOP</a>
+				    </li>
+				    <li role="presentation">
+				    	<a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">#Classic</a>
+				    </li>
+			  	</ul>
+				<!-- Tab panes -->
+				<div class="tab-content">
+				    <div role="tabpanel" class="tab-pane active" id="home">
+				    	<div class="tab-view">
+				    		<h1 class="titlev">01</h1>
+				    		<div class="contentv">
+				    			<span class="boldT">#Name 01</span><br>
+				    			<span><i class="blurT">#singer</i></span>
+				    		</div>
+				    	</div>
+				    </div>
+				    <div role="tabpanel" class="tab-pane" id="profile">...</div>
+				    <div role="tabpanel" class="tab-pane" id="messages">...</div>
+				    <div role="tabpanel" class="tab-pane" id="settings">...</div>
+				</div>
+				<!-- End-tabpanes -->
 			</div>
-			<div class="box">
-				<img src="images/pic1.jpg" alt="">
-				<h5 class="card-title"> #singer name</h5>
-			</div>
-			<div class="box">
-				<img src="images/pic4.jpg" alt="">
-				<h5 class="card-title"> #singer name</h5>
-			</div>	
+			<!-- EndSidebar -->
 		</div>
 		
-		<!-- Sidebar-right -->
-		<div class="sidebar">
-			<h2 class="title">#Top</h2>
-		  <!-- Nav tabs -->
-		  	<ul class="nav nav-tabs" role="tablist">
-			    <li role="presentation" class="active">
-			    	<a href="#home" aria-controls="home" role="tab" data-toggle="tab">#VPOP</a>
-			    </li>
-			    <li role="presentation">
-			    	<a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">#KPOP</a>
-			    </li>
-			    <li role="presentation">
-			    	<a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">#Classic</a>
-			    </li>
-		  	</ul>
-
-		  <!-- Tab panes -->
-		  <div class="tab-content">
-		    <div role="tabpanel" class="tab-pane active" id="home">
-		    	<div class="tab-view active">
-		    		<img src="images/1.jpg" alt="" class="img-responsive">
-		    	</div>
-		    	<div class="tab-view">
-		    		
-		    	</div>
-		    	<div class="tab-view">
-		    		
-		    	</div>
-		    	<div class="tab-view">
-		    		
-		    	</div>
-		    	<div class="tab-view">
-		    		
-		    	</div>
-		    </div>
-		    <div role="tabpanel" class="tab-pane" id="profile">...</div>
-		    <div role="tabpanel" class="tab-pane" id="messages">...</div>
-		    <div role="tabpanel" class="tab-pane" id="settings">...</div>
-		  </div>
-		  <!-- End-tabpanes -->
-
-		</div>
-		<!-- EndSidebar -->
 		<div class="clear"></div>
 
 		
 		<!-- footer -->
 		<div class="footer"></div>
 		<!-- End-footer -->
-	</div>
-	<!--end-wrapper-->
 
 
 
@@ -181,8 +181,33 @@
 
 
 
-
-
+<!-- Settings-modal -->
+<div class="modal fade" id="settings-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">Setting</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="username" class="control-label">User name:</label>
+            <input type="text" class="form-control" id="username">
+          </div>
+          <div class="form-group">
+            <label for="password" class="control-label">Password:</label>
+            <input type="password" class="form-control" id="password">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Signin-modal -->
 <div class="modal fade" id="signin-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
