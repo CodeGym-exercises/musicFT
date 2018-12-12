@@ -141,10 +141,18 @@ svg{
 	height: 100%;
 	border-top: 350px solid ;
 	display: block;
+    float: top;
+
+
+}
+.page-footer{
+	background-color: #e6e6e6;
+	border-top: 200px;
+	padding-bottom: 30px;
+
 }
 
-.footer .panelheading{
-	/*background-color: #222;*/
-	/*color: #ffffff;*/
-}
+
+
+
 
