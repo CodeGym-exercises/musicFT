@@ -66,8 +66,6 @@ svg {
 
 .content, .sidebar {
     margin-top: 5px;
-    height: 500px;
-    /*border: 1px solid #000;*/
     border-bottom: 30px;
     margin-bottom: 50px;
     height: auto;
@@ -113,17 +111,21 @@ svg {
     height: 400px;
     vertical-align: top;
     }
-
 /*playmusic*/
 .playmusic{
-    width: 75%;
-
+    width: 65%;
 }
 
 .products-box {
     background:#fff;
     padding: 0 1em 3em 1em;
 }
+.row{
+    width: 100%;
+}
+/*.container{*/
+    /*margin-top: 60%;*/
+/*}*/
 /*  GRID OF Five   ============================================================================= */
 .section {
     clear: both;
@@ -254,20 +256,14 @@ svg {
 }
 .image-slider {
     box-shadow: 0 10px 10px -10px #555;
+    float: left;
 }
-/*.player h2 {*/
-    /*font-size: 20px;*/
-    /*letter-spacing: .2em;*/
-    /*text-transform: uppercase;*/
-/*}*/
-/*.site-section {*/
-    /*padding: 2.5em 0;*/
-    /*width: 100%;*/
-    /*vertical-align: bottom;*/
-/*}*/
 
 audio{
     width: 100%;
+}
+.col-md-6{
+    width: 55%;
 }
 /*listsong*/
 .listsongs{
@@ -275,13 +271,16 @@ audio{
     border: 1px solid #000;
 }
 
-
+.listsinger{
+    display: block;
+    margin-top: 100%;
+}
 /*====================Sidebar==========================*/
 .sidebar {
     display: inline-block;
     width: 34%;
     float: right;
-    padding-top: 250px;
+
 }
 
 .sidebar .tab-view {
@@ -307,11 +306,9 @@ audio{
 }
 
 .sidebar .tab-view .sub-content {
-    /*border:1px solid #000;*/
     display: inline-block;
     float: right;
     height: 100%;
-    /*line-height: 100px;*/
     margin-right: 40px;
     font-size: 18px;
     padding-top: 20px;
@@ -336,7 +333,6 @@ audio{
 
     background-position: center;
     background-repeat: no-repeat;
-    /*background-size: cover;*/
     background-attachment: fixed;
     position: fixed;
     height: 100%;
@@ -349,7 +345,7 @@ audio{
 
 .page-footer {
     background-color: #e6e6e6;
-    border-top: 200px;
+    border-top: 100px;
     padding-bottom: 30px;
 
 
@@ -427,7 +423,7 @@ audio{
 }
 
 .site-block-subscribe .form-control {
-    font-weight: 300;
+    font-weight: 200;
     border-color: #fff !important;
     height: 80px;
     font-size: 22px;
@@ -435,54 +431,98 @@ audio{
     padding-left: 30px;
     padding-right: 30px;
 }
-
-.player {
-    /*position: relative;*/
+/*button play*/
+body {
+    color: #222;
+    font-family: 'Roboto', sans-serif;
 }
 
-.player img {
-    /*max-width: 100px;*/
-    /*border-radius: 50%;*/
-    /*margin-bottom: 20px;*/
+.share {
+    margin-left: 68%;
+    margin-top: 10%;
+    max-width: 60px;
+    list-style: none;
+    padding-top: 60px;
+    border-radius: 50%;
 }
 
-.player .team-number {
-    /*position: absolute;*/
-    /*width: 30px;*/
-    /*height: 30px;*/
-    /*background: #f23a2e;*/
-    /*border-radius: 50%;*/
-    /*color: #fff;*/
+.share li {
+    width: 60px;
+    color: #fff;
+    height: 60px;
+    line-height: 50px;
+    text-align: center;
+    position: relative;
 }
 
-.player .team-number > span {
-    /*position: absolute;*/
-    /*-webkit-transform: translate(-50%, -50%);*/
-    /*-ms-transform: translate(-50%, -50%);*/
-    /*transform: translate(-50%, -50%);*/
-    /*left: 50%;*/
-    /*top: 50%;*/
+li.middle a {
+    left: 0;
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    transition: all .4s ease-in-out 0s;
 }
 
-
-
-.player .position {
-    /*font-size: 14px;*/
-    /*color: #b3b3b3;*/
-    /*text-transform: uppercase;*/
+li.middle:hover {
+    list-style: middle;
 }
 
-
-@media (min-width: 768px) {
-    /*.site-section {*/
-        /*padding: 5em 0;*/
-    /*}*/
+.share-icon {
+    background: #568;
+    position: relative;
+    z-index: 1;
 }
 
-.site-section.site-section-sm {
-    /*padding: 4em 0;*/
+a.facebook {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #4264AA;
 }
 
-.content{
-    padding-top: 250px;
+a.twitter {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    background-color: #6CB7F0;
 }
+
+.share li a {
+    color: #fff;
+    font-size: 30px;
+}
+
+.top {
+    background: #FFAD0F;
+}
+
+.bottom {
+    background: #EA5154;
+}
+
+.middle span {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 11%;
+    top: 29px;
+    font-size: 12px;
+    color: #ccc;
+    z-index: 2;
+    opacity: 0;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.share li:hover .facebook {
+    left: -60px;
+}
+
+.share li:hover .twitter {
+    left: 60px;
+}
+
+.share li:hover span {
+    opacity: 1;
+}
+/*music*/
