@@ -105,17 +105,21 @@ svg {
     width: 100%;
 }
 /*====================playmusic&listsongs================*/
-.listsongs, .playmusic{
+.rslides img{
+    width: 100%;
+}
+.listsongs, .playmusic {
     display: inline-block;
     height: 400px;
-}
-
+    vertical-align: top;
+    }
 
 /*playmusic*/
 .playmusic{
     width: 75%;
 
 }
+
 .products-box {
     background:#fff;
     padding: 0 1em 3em 1em;
@@ -251,17 +255,33 @@ svg {
 .image-slider {
     box-shadow: 0 10px 10px -10px #555;
 }
+/*.player h2 {*/
+    /*font-size: 20px;*/
+    /*letter-spacing: .2em;*/
+    /*text-transform: uppercase;*/
+/*}*/
+/*.site-section {*/
+    /*padding: 2.5em 0;*/
+    /*width: 100%;*/
+    /*vertical-align: bottom;*/
+/*}*/
+
+audio{
+    width: 100%;
+}
 /*listsong*/
 .listsongs{
     width: 24%;
     border: 1px solid #000;
 }
 
+
 /*====================Sidebar==========================*/
 .sidebar {
     display: inline-block;
     width: 34%;
     float: right;
+    padding-top: 250px;
 }
 
 .sidebar .tab-view {
@@ -417,57 +437,52 @@ svg {
 }
 
 .player {
-    position: relative;
+    /*position: relative;*/
 }
 
 .player img {
-    max-width: 100px;
-    border-radius: 50%;
-    margin-bottom: 20px;
+    /*max-width: 100px;*/
+    /*border-radius: 50%;*/
+    /*margin-bottom: 20px;*/
 }
 
 .player .team-number {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    background: #f23a2e;
-    border-radius: 50%;
-    color: #fff;
+    /*position: absolute;*/
+    /*width: 30px;*/
+    /*height: 30px;*/
+    /*background: #f23a2e;*/
+    /*border-radius: 50%;*/
+    /*color: #fff;*/
 }
 
 .player .team-number > span {
-    position: absolute;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    left: 50%;
-    top: 50%;
+    /*position: absolute;*/
+    /*-webkit-transform: translate(-50%, -50%);*/
+    /*-ms-transform: translate(-50%, -50%);*/
+    /*transform: translate(-50%, -50%);*/
+    /*left: 50%;*/
+    /*top: 50%;*/
 }
 
-.player h2 {
-    font-size: 20px;
-    letter-spacing: .2em;
-    text-transform: uppercase;
-}
+
 
 .player .position {
-    font-size: 14px;
-    color: #b3b3b3;
-    text-transform: uppercase;
+    /*font-size: 14px;*/
+    /*color: #b3b3b3;*/
+    /*text-transform: uppercase;*/
 }
 
-.site-section {
-    padding: 2.5em 0;
-    width: 3000%;
-}
 
 @media (min-width: 768px) {
-    .site-section {
-        padding: 5em 0;
-    }
+    /*.site-section {*/
+        /*padding: 5em 0;*/
+    /*}*/
 }
 
 .site-section.site-section-sm {
-    padding: 4em 0;
+    /*padding: 4em 0;*/
 }
 
+.content{
+    padding-top: 250px;
+}
