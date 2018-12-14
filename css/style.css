@@ -281,7 +281,7 @@ audio{
     display: inline-block;
     width: 34%;
     float: right;
-    padding-top: 250px;
+    /*padding-top: 250px;*/
 }
 
 .sidebar .tab-view {
@@ -484,5 +484,5 @@ audio{
 }
 
 .content{
-    padding-top: 250px;
+    /*padding-top: 250px;*/
 }
