@@ -113,12 +113,7 @@ svg {
     }
 /*playmusic*/
 .playmusic{
-<<<<<<< HEAD
-    width: 59%;
-
-=======
     width: 65%;
->>>>>>> 3aa3b874aec9d2a26783a76a3c4ce5f21a244539
 }
 
 .products-box {
@@ -272,17 +267,8 @@ audio{
 }
 /*listsong*/
 .listsongs{
-  width: 24%;
-  height: 400px;
-  /*background-color: #c9c9c9;*/    
-  margin: 0 auto;
-}
-/*================================*/
-.listsongs .subtag{
-  width: 100%;
-  height: 80px;
-  background-color: #fff;
-  border-bottom: 1px solid #000;
+    width: 34%;
+    border: 1px solid #000;
 }
 
 .listsongs .subtag .avatar{
@@ -364,7 +350,7 @@ audio{
     background-repeat: no-repeat;
     background-attachment: fixed;
     position: fixed;
-    height: 100%;
+    height: 90%;
     border-top: 350px solid;
     display: block;
     float: top;
@@ -375,93 +361,11 @@ audio{
 .page-footer {
     background-color: #e6e6e6;
     border-top: 100px;
-    padding-bottom: 30px;
 
 
-}
-
-.site-blocks-cover {
-    background-size: cover;
-    background-repeat: no-repeat;
-    float: left;
 
 }
 
-.site-blocks-cover.overlay {
-    position: relative;
-}
-
-.site-blocks-cover.overlay:before {
-    position: absolute;
-    content: "";
-    left: 0;
-    bottom: 0;
-    right: 0;
-    top: 0;
-    background: rgba(0, 0, 0, 0.4);
-
-}
-
-.site-blocks-cover .player {
-    position: absolute;
-    bottom: -250px;
-    width: 100%;
-}
-
-.site-blocks-cover, .site-blocks-cover .row {
-    min-height: 600px;
-    height: calc(100vh);
-}
-
-.site-blocks-cover.inner-page-cover, .site-blocks-cover.inner-page-cover .row {
-    min-height: 600px;
-    height: calc(30vh);
-}
-
-.site-blocks-cover h2, .site-blocks-cover h3, .site-blocks-cover h4, .site-blocks-cover h5 {
-    color: #fff;
-}
-
-.site-blocks-cover h1 {
-    font-size: 30px;
-    font-weight: 900;
-    color: #fff;
-    line-height: 1.5;
-}
-
-@media (min-width: 768px) {
-    .site-blocks-cover h1 {
-        font-size: 50px;
-    }
-}
-
-.site-blocks-cover p {
-    color: #fff;
-    font-size: 1.2rem;
-    line-height: 1.5;
-}
-
-.site-blocks-cover .intro-text {
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-.site-block-subscribe .btn {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.site-block-subscribe .form-control {
-    font-weight: 200;
-    border-color: #fff !important;
-    height: 80px;
-    font-size: 22px;
-    color: #fff;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-/*button play*/
 body {
     color: #222;
     font-family: 'Roboto', sans-serif;
@@ -556,3 +460,16 @@ a.twitter {
     opacity: 1;
 }
 /*music*/
+.navbar-text{
+    margin-left: 10px;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    margin-right: 10px;
+}
+
+.ic-pointer{
+    background-color: #556688;
+}
+.btn{
+    margin-left: 10px;
+}
